@@ -1,21 +1,26 @@
 
 
 import React from 'react';
+import kitob from '../assets/img/kitob.svg'
+import ins from '../assets/img/ins.svg'
+import li from '../assets/img/li.svg'
+import ftt from '../assets/img/ftt.svg'
+
 
 const Footer = () => {
     return (
         <>
           <footer>
-            <div class="ff">
-            <img src="./lesson-1/img/kitob.svg" alt=""/><br/>
-            <img src="./img/ins.svg" alt=""/>
+            <div className="ff">
+            <img src={kitob} alt=""/> <br/>
+            <img src={ins} alt=""/>
         </div>
 
-          <div class="foot">
+          <div className="foot">
             
-            <img src="./img/li.svg" alt=""/>
+            <img src={li} alt=""/>
           </div>
-          <img src="./img/ftt.svg" alt="" class="footter" width="10px"/>
+          <img src={ftt} alt="" className="footter" width="10px"/>
         </footer>
         </>
     );
